@@ -14,6 +14,7 @@ program m3
     age = 20
     has_id = .true.
 
+    print *, "====== 1. SIMPLE IF-ELSE STATEMENTS ======"
     if (score >= 90) then
        print *, "Nilai: A"
     else if (score >= 80) then
@@ -24,6 +25,7 @@ program m3
        print *, "Nilai: D"
     end if
 
+    print *, "====== 2. NESTED IF STATEMENTS ======"
     if (x > 0) then
         if (y > 0) then
             print *, "x dan y keduanya positif"
@@ -34,6 +36,7 @@ program m3
       print *, "x tidak positif"
     end if
 
+    print *, "====== 3. CASE STATEMENTS ======"
     select case (day)
         case (1)
             print *, "Senin"
@@ -51,13 +54,11 @@ program m3
             print *, "Hari tidak valid"
     end select
 
-
-
+    print *, "====== 4. LOGICAL COMBINATION ======"
     if (age >= 18 .and. has_id) then
         print *, "Boleh masuk"
     else
         print *, "Tidak boleh masuk"
     end if
-
 
 end program m3
