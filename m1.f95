@@ -1,4 +1,4 @@
-program hello_world
+program m1
     implicit none
     integer :: i
     real :: x
@@ -25,4 +25,4 @@ program hello_world
     print *, "Real part:", real(z)
     print *, "Imaginary part:", aimag(z)
 
-end program hello_world
+end program m1
